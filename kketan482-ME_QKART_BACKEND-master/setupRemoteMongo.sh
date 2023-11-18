@@ -1,0 +1,3 @@
+# Setup file template to upload data to MongoDB Atlas
+mongoimport --uri "mongodb://ac-a6gu3ek-shard-00-00.r1kamef.mongodb.net:27017,ac-a6gu3ek-shard-00-01.r1kamef.mongodb.net:27017,ac-a6gu3ek-shard-00-02.r1kamef.mongodb.net:27017/qkart?replicaSet=atlas-s2doy6-shard-0" --ssl --authenticationDatabase admin --username kketan482 --password Maiomom@2023 --drop --collection users --file data/export_qkart_users.json
+mongoimport --uri "mongodb://ac-a6gu3ek-shard-00-00.r1kamef.mongodb.net:27017,ac-a6gu3ek-shard-00-01.r1kamef.mongodb.net:27017,ac-a6gu3ek-shard-00-02.r1kamef.mongodb.net:27017/qkart?replicaSet=atlas-s2doy6-shard-0" --ssl --authenticationDatabase admin --username kketan482 --password Maiomom@2023 --drop --collection products --file data/export_qkart_products.json
